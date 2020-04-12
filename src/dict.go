@@ -247,7 +247,7 @@ func definition(word string) error {
 
 func def(doc *goquery.Document, word string) {
 
-	if doc.Find("div").HasClass("css-1urpfgu e16867sm0") {
+	if doc.Find("h2").HasClass("spell-suggestions-subtitle css-6gthty e19m0k9k0") {
 		doc.Find(".css-1w0dr93").Each(
 			func(i int, selection *goquery.Selection) {
 				fmt.Println(selection.Text())
